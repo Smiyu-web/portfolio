@@ -24,19 +24,64 @@ h1 {
   font-family: "Meddon", cursive;
 }
 
-.line {
-  width: 1px;
-  background-color: white;
-  position: absolute;
-  height: 6rem;
+@layer base {
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-7xl lg:text-8xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-7xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-baseC;
+  }
+
+  h5 {
+    @apply text-sm;
+  }
+
+  h6 {
+    @apply text-xs;
+  }
+
+  p {
+    @apply text-tiny;
+  }
 }
 
 @layer components {
   .layout {
     @apply w-screen relative text-left 
-    px-8 md:pl-40 xl:pl-64 
-    pt-100 pb-32 lg:py-48
-    lg:flex;
+    px-8 md:pl-40 xl:pl-64;
+  }
+
+  .layout_h {
+    @apply h-screen pt-100 pb-32;
+  }
+
+  .layout_one {
+    @apply h-full pt-16 pb-4 lg:py-40;
+  }
+
+  .layout_two {
+    @apply h-full pt-28 pb-4 lg:py-40;
+  }
+
+  .line {
+    @apply absolute bg-wh w-px h-14 md:h-20 lg:h-24;
+  }
+
+  .border_bottom {
+    @apply border-b-2 border-wh pb-1;
+  }
+
+  .nav {
+    @apply text-wh text-xs font-semibold py-2 tracking-widest;
   }
 
   .history_date {
@@ -50,5 +95,37 @@ h1 {
 
   .aboutImg {
     @apply absolute w-40 md:w-60 lg:w-64;
+  }
+
+  .slide_wrapper {
+    @apply relative my-16 h-56 md:h-60 lg:h-72;
+  }
+
+  .img_bg {
+    @apply absolute bg-wh
+    w-52 h-52 md:w-64 md:h-64 
+    lg:w-80 lg:h-80
+    xl:w-96 xl:h-96;
+  }
+
+  .work_img {
+    @apply absolute 
+    top-14 md:top-16 lg:top-20 xl:top-24
+    w-40 md:w-52 lg:w-64 xl:w-80;
+  }
+
+  .work_name {
+    @apply absolute font-bold 
+    text-4xl lg:text-5xl xl:text-6xl
+    top-40 md:top-52 lg:top-64 xl:top-80;
+  }
+
+  .work_type {
+    @apply absolute font-light text-xs lg:text-sm
+    top-52 md:top-64 lg:top-80 xl:top-96;
+  }
+
+  .top_arrow {
+    @apply inline w-6;
   }
 }

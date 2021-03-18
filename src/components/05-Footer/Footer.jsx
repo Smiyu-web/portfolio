@@ -1,34 +1,23 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const Container = styled.div`
-  background-color: #FFF;
-  color: black;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-const Wrapper = styled.div`
-  position: relative;
-  background-color: #F2F2F2;
-`
-
+import React from "react";
+import TopArrow from "../00-UI/TopArrow";
 
 const Footer = () => {
   return (
-    <Container>
-      
-      <Wrapper className="w-3/4 h-3/4">
-        <h5 className="absolute bottom-1/2 right-32">miyuuu0728@gmail.com</h5>
-        <h3 className="absolute bottom-4 right-2 text-right w-2/3">Let's make something <span className="border-b-2">awesome</span> together!</h3>
-      </Wrapper>
-      <h5 className="absolute bottom-6 right-2">&copy;2021 miyu setoyama</h5>
-    </Container>
-  )
-}
+    <div className="relative flex flex-col justify-center items-center w-screen h-screen bg-wh">
+      <TopArrow />
+      <div className="relative bg-bg w-3/4 h-3/4">
+        <h6 className="absolute text-sm bottom-1/2 right-1/2">
+          miyuuu0728@gmail.com
+        </h6>
+        <h3 className="absolute text-sm md:text-lgC bottom-5 right-5 text-right">
+          Let's make something <br />
+          <span className="border-b-2 pb-1">awesome</span> together!
+        </h3>
+      </div>
 
-export default Footer
+      <h6 className="text-bg">&copy;2021 miyusetoyama</h6>
+    </div>
+  );
+};
+
+export default Footer;

@@ -1,8 +1,7 @@
-import React from 'react'
-import Title from '../00-UI/Title'
-import History from './History'
-import AboutImg from './AboutImg'
-
+import React from "react";
+import Title from "../00-UI/Title";
+import History from "./History";
+import AboutImg from "./AboutImg";
 
 // const BackRec = styled.div`
 //   position: absolute;
@@ -18,27 +17,23 @@ import AboutImg from './AboutImg'
 // `
 
 const About = () => {
-  const no = '01';
-  const title = 'who i am';
-
   return (
-    <div id="about" className="layout h-full lg:h-screen">
-      <div id="line" className="hidden md:block line top-0 left-56"/>
-
+    <div id="about" className="layout layout_one flex flex-col lg:flex-row">
+      <div id="line" className="line hidden md:block top-0 left-300" />
       <div className="lg:w-1/2">
-        <Title no={no} title={title} />
+        <Title no="01" title="who i am" />
         <div className="flex flex-col items-center">
-          <h4 className="text-xs md:text-base my-12 md:my-10 lg:my-16 mx-4 md:mx-6">
-            My dream is that making something amaizing to people happy. 
-            Contact me if you have a same dreame as me.
+          <h4 className="font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6">
+            My dream is that making something amaizing to people happy. Contact
+            me if you have a same dreame as me.
           </h4>
           <History />
         </div>
       </div>
       <AboutImg />
-      <div className="line bottom-0 left-20 md:left-72 lg:left-lg"></div>
+      <div id="line" className="line bottom-0 left-300 lg:left-500"></div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
