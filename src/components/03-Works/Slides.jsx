@@ -1,73 +1,88 @@
 import React from "react";
-import styled from "styled-components";
-import premiere from "../../images/premiere.png";
-import yuco from "../../images/yuco.png";
-import am from "../../images/11am.png";
+import Projects from "./projects";
+import ViewGit from "./ViewGit";
 
-const Wrapper = styled.div`
-  img {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  }
-  span {
-    color: rgba(0, 0, 0, 0);
-    background-size: 150px;
-    -webkit-background-clip: text;
-  }
-
-  #premiere {
-    background-image: url(${premiere});
-  }
-  #yuco {
-    background-image: url(${yuco});
-    background-size: 20px;
-  }
-
-  #am {
-    background-image: url(${am});
-    background-size: 30px;
-  }
-`;
-
-const projects = [
-  { title: "PREMIERE", id: "premiere", image: premiere, type: "E-commerce" },
-  { title: "yu + co.", id: "yuco", image: yuco, type: "website" },
-  { title: "11am", id: "am", image: am, type: "website" },
-];
-
-const ListProject = projects.map((el, index) => {
+const ListProject = Projects.map((el, index) => {
   if (index % 2 === 0) {
+    // right
     return (
-      <Wrapper id="wrapper" className="slide_wrapper ml-6 lg:ml-10" key={index}>
-        <div className="img_bg"></div>
-        <img
-          src={el.image}
-          alt={el.title}
-          className="work_img left-6 lg:left-8"
-        />
-        <span id={el.id} className="work_name left-1/3 xl:left-1/4">
-          {el.title}
-        </span>
-        <p className="work_type text-left">{el.type}</p>
-      </Wrapper>
+      <div id="right" className="work_right" key={index}>
+        <div className="md:w-72 xl:w-96 md:ml-12 mt-10 text-center md:text-left inset-0 my-auto">
+          <h3 className="mb-10 font-meddon" data-aos="fade-up">
+            {el.title}
+          </h3>
+          <h6 className="text-gy mb-3" data-aos="fade-up" data-aos-delay="100">
+            {el.partner}
+          </h6>
+          <h6
+            className="font-semibold tracking-wider"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {el.langs}
+          </h6>
+          <ViewGit git={el.git} />
+          <br />
+        </div>
+        <div className="img_wrapper  md:left-10">
+          <a href={el.url} target="_blank" rel="noopener noreferrer">
+            <div id="img_bg" className="img_bg" data-aos="fade-left"></div>
+            <img
+              src={el.image}
+              alt={el.title}
+              className="work_img"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            />
+          </a>
+          <div className="absolute overflow-hidden right-0 -bottom-6 text-gy flex items-center">
+            <hr id="line" className="bg-wh w-20 h-px"></hr>
+            <h6 className="ml-4">{el.type}</h6>
+          </div>
+        </div>
+      </div>
     );
   } else {
+    // left
     return (
-      <Wrapper id="wrapper" className="slide_wrapper lg:mr-10" key={index}>
-        <div className="img_bg right-6"></div>
-        <img
-          src={el.image}
-          alt={el.title}
-          className="work_img right-12 md:right-14"
-        />
-        <span id={el.id} className="work_name right-1/3 xl:right-1/4">
-          {el.title}
-        </span>
-        <p className="work_type right-6">{el.type}</p>
-      </Wrapper>
+      <div id="right" className="work_left" key={index}>
+        <div className="img_wrapper md:left-10 lg:left-0">
+          <a href={el.url} target="_blank" rel="noopener noreferrer">
+            <div id="img_bg" className="img_bg" data-aos="fade-left"></div>
+            <img
+              src={el.image}
+              alt={el.title}
+              className="work_img"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            />
+          </a>
+          <div className="absolute overflow-hidden right-0 -bottom-6 text-gy flex items-center">
+            <hr id="line" className="bg-wh w-20 h-px"></hr>
+            <p className="ml-4">{el.type}</p>
+          </div>
+        </div>
+        <div className="md:w-72 xg:w-96 md:ml-24 mt-10 text-center md:text-left inset-0 my-auto">
+          <h3 className="mb-10 font-meddon" data-aos="fade-up">
+            {el.title}
+          </h3>
+          <h6 className="text-gy mb-3" data-aos="fade-up" data-aos-delay="100">
+            {el.partner}
+          </h6>
+          <h6
+            className="font-semibold tracking-wider"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {el.langs}
+          </h6>
+          <ViewGit git={el.git} />
+          <br />
+        </div>
+      </div>
     );
   }
 });
-
 const Slides = () => {
   return <div className="w-full">{ListProject}</div>;
 };

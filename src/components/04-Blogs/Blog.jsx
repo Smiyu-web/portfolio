@@ -1,68 +1,47 @@
 import React from "react";
-import teck from "../../images/teck.jpeg";
+import BlogsObj from "./blogsObj";
+import Slider from "react-slick";
+import NextArrow from "../00-UI/NextArrow";
+import BackArrow from "../00-UI/BackArrow";
 
-const blogs = [
-  {
-    title: "How to handle Async code in JavaScript?",
-    date: "2021-02-09",
-    type: "article",
-    img: "",
-    url:
-      "https://miyuuu0728.medium.com/how-to-handle-async-code-in-javascript-a7c355465cc",
-  },
-  {
-    title: "How to handle Async code in JavaScript?",
-    date: "2021-02-09",
-    type: "article",
-    img: "",
-    url:
-      "https://miyuuu0728.medium.com/how-to-handle-async-code-in-javascript-a7c355465cc",
-  },
-  {
-    title: "How to handle Async code in JavaScript?",
-    date: "2021-02-09",
-    type: "article",
-    img: "",
-    url:
-      "https://miyuuu0728.medium.com/how-to-handle-async-code-in-javascript-a7c355465cc",
-  },
-  {
-    title: "How to handle Async code in JavaScript?",
-    date: "2021-02-09",
-    type: "article",
-    img: "",
-    url:
-      "https://miyuuu0728.medium.com/how-to-handle-async-code-in-javascript-a7c355465cc",
-  },
-];
-
-// const ListItem = blogs.map((el, index) => {
-//   return (
-//     <hr />
-//     <>
-//   )
-// })
+const ListItem = BlogsObj.map((el, index) => {
+  const TagList = el.tags.map((tag, index) => {
+    return (
+      <li key={index} className="text-xs text-gy mr-2">
+        # {tag}
+      </li>
+    );
+  });
+  return (
+    <div className="px-3 md:px-8 lg:px-12 overflow-hidden" key={index}>
+      <p className="font-semibold text-xs text-gy mb-2">{el.date}</p>
+      <img src={el.img} alt={el.title} />
+      <ul>
+        <li className="border-b w-14 text-xs tracking-wider my-4 pb-1">
+          {el.type}
+        </li>
+        <ul className="flex flex-wrap mb-2">{TagList}</ul>
+        <li className="font-medium text-sm md:text-xl">{el.title}</li>
+      </ul>
+    </div>
+  );
+});
 
 const Blog = () => {
+  const settings = {
+    className: "center",
+    nextArrow: <NextArrow type="next" />,
+    prevArrow: <BackArrow type="prev" />,
+    centerMode: true,
+    infinite: true,
+    centerPadding: "25%",
+    slidesToShow: 1,
+    speed: 500,
+  };
   return (
-    <div className="flex">
-      <div className="w-80 mr-10">
-        <img src={teck} alt="" />
-        <h5 className="text-right mt-2 border-b tracking-wider">Article</h5>
-        <h5 className="font-semibold mt-4">2021-02-09</h5>
-        <h4 className=" font-light mt-4">
-          How to handle Async code in JavaScript?
-        </h4>
-      </div>
-      <div className="w-80 mr-10">
-        <img src={teck} alt="" />
-        <h5 className="text-right mt-2 border-b tracking-wider">Article</h5>
-        <h5 className="font-semibold mt-4">2021-02-09</h5>
-        <h4 className="font-light mt-4">
-          How to handle Async code in JavaScript?
-        </h4>
-      </div>
-    </div>
+    <Slider {...settings} className="my-20 slider">
+      {ListItem}
+    </Slider>
   );
 };
 

@@ -1,22 +1,59 @@
-import React from "react";
-import TopArrow from "../00-UI/TopArrow";
+import React, { useEffect, useState } from "react";
+import ScrollTrigger from "react-scroll-trigger";
+import TopArrow from "./TopArrow";
+import { TextAnimation } from "../00-UI/TextAnimation";
 
 const Footer = () => {
+  const [visible, setVisible] = useState();
+
+  useEffect(() => {
+    if (visible) {
+      TextAnimation();
+    }
+  }, [visible]);
+
+  const onEnterViewport = () => {
+    setVisible(true);
+  };
+  const onExitViewport = () => {
+    setVisible(false);
+  };
   return (
-    <div className="relative flex flex-col justify-center items-center w-screen h-screen bg-wh">
+    <footer
+      id="footer"
+      className="sticky z-10 flex flex-col justify-center items-center w-screen h-screen bg-wh"
+    >
       <TopArrow />
       <div className="relative bg-bg w-3/4 h-3/4">
-        <h6 className="absolute text-sm bottom-1/2 right-1/2">
+        <h6
+          className="absolute inset-0 m-auto text-center top-1/2"
+          data-aos="fade-up"
+        >
           miyuuu0728@gmail.com
         </h6>
-        <h3 className="absolute text-sm md:text-lgC bottom-5 right-5 text-right">
-          Let's make something <br />
-          <span className="border-b-2 pb-1">awesome</span> together!
-        </h3>
+        <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
+          <h4
+            className={`
+            ${
+              visible ? "textAnimation" : "invisible"
+            } absolute bottom-20 md:bottom-24 right-150`}
+          >
+            Let's make something
+          </h4>
+          <h4
+            className={`
+              ${
+                visible ? "textAnimation" : "invisible"
+              } absolute bottom-100 right-100`}
+          >
+            awesome together!
+          </h4>
+        </ScrollTrigger>
       </div>
-
-      <h6 className="text-bg">&copy;2021 miyusetoyama</h6>
-    </div>
+      <p className="text-bg absolute right-8 bottom-8">
+        &copy;2021 miyusetoyama
+      </p>
+    </footer>
   );
 };
 
