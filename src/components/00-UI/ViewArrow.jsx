@@ -56,7 +56,12 @@ const Arrow = styled.div`
 const ViewArrow = (props) => {
   return (
     <Arrow>
-      <a href={props.url} className="btnarrow4 text-xs tracking-wider">
+      <a
+        href={props.url}
+        className="btnarrow4 text-xs tracking-wider"
+        target="_blank"
+        rel="noopener"
+      >
         &nbsp;&nbsp;&nbsp;View more&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
     </Arrow>

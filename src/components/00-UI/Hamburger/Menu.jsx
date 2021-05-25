@@ -14,8 +14,8 @@ const Menu = (props) => {
   const menus = [
     { link: "#about", text: "WHO I AM", delay: "0.1s" },
     { link: "#works", text: "WORKS", delay: "0.2s" },
-    { link: "#blogs", text: "BLOGS", delay: "0.3s" },
-    { link: "#footer", text: "CONTACT", delay: "0.4s" },
+    // { link: "#blogs", text: "BLOGS", delay: "0.3s" },
+    { link: "#footer", text: "CONTACT", delay: "0.3s" },
   ];
 
   const ListItem = menus.map((menu, index) => {
@@ -49,7 +49,11 @@ const Menu = (props) => {
                 animationDelay: "0.5s",
               }}
             >
-              <a href="https://github.com/Smiyu-web">
+              <a
+                href="https://github.com/Smiyu-web"
+                target="_blank"
+                rel="noopener"
+              >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             </li>
@@ -61,7 +65,11 @@ const Menu = (props) => {
                 animationDelay: "0.6s",
               }}
             >
-              <a href="https://github.com/Smiyu-web">
+              <a
+                href="https://www.linkedin.com/in/miyu-setoyama-35789219a/"
+                target="_blank"
+                rel="noopener"
+              >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </li>

@@ -21,7 +21,6 @@ export const TextAnimation = () => {
         );
       }
     }
-    console.log(textsArray);
 
     for (let k = 0; k < textsArray.length; k++) {
       targetElement.innerHTML += textsArray[k];

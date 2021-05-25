@@ -3,7 +3,7 @@ import React from "react";
 const menus = [
   { link: "#about", text: "WHO I AM" },
   { link: "#works", text: "WORKS" },
-  { link: "#blogs", text: "BLOGS" },
+  // { link: "#blogs", text: "BLOGS" },
   { link: "#footer", text: "CONTACT" },
 ];
 
@@ -27,8 +27,16 @@ const Navbar = () => {
         <ul className="cursor-pointer">{ListItem}</ul>
         <hr className="w-8 my-4 text-gy" />
         <ul>
-          <li className="nav cursor-pointer">Github</li>
-          <li className="nav cursor-pointer">LinkedIn</li>
+          <a href="https://github.com/Smiyu-web" target="_blank" rel="noopener">
+            <li className="nav cursor-pointer">Github</li>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/miyu-setoyama-35789219a/"
+            target="_blank"
+            rel="noopener"
+          >
+            <li className="nav cursor-pointer">LinkedIn</li>
+          </a>
         </ul>
       </nav>
     </div>
