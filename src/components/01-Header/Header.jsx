@@ -46,6 +46,7 @@ const Header = () => {
           </ul>
         </div>
         <div
+          ID="line"
           className="scroll -bottom-10 left-300"
           data-aos="fade-up"
           data-aos-offset="-300"

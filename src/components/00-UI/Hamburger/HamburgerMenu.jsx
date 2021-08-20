@@ -26,7 +26,7 @@ const HamburgerMenu = () => {
           MENU
         </div>
       ) : (
-        <div className="text-bl menu_bar" onClick={handleMenuClose}>
+        <div className="text-black menu_bar" onClick={handleMenuClose}>
           CLOSE
         </div>
       )}

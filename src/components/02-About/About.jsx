@@ -41,7 +41,10 @@ const About = () => {
         </div>
       </div>
       <AboutImg />
-      <div id="line" className="line bottom-0 left-300 md:left-500"></div>
+      <div
+        id="line"
+        className="scroll line bottom-0 left-300 md:left-500"
+      ></div>
     </div>
   );
 };

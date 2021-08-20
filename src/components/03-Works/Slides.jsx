@@ -1,8 +1,8 @@
 import React from "react";
-import Projects from "./projects";
-import ViewGit from "./ViewGit";
+import { projects } from "./projects";
+import CheckDetails from "./CheckDetails";
 
-const ListProject = Projects.map((el, index) => {
+const ListProject = projects.map((el, index) => {
   if (index % 2 === 0) {
     // right
     return (
@@ -14,14 +14,25 @@ const ListProject = Projects.map((el, index) => {
           <h6 className="text-gy mb-3" data-aos="fade-up" data-aos-delay="100">
             {el.partner}
           </h6>
-          <h6
+          {/* <h6
             className="font-semibold tracking-wider"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             {el.langs}
-          </h6>
-          <ViewGit git={el.git} />
+          </h6> */}
+          <div>
+            <ul className="flex flex-wrap">
+              {el.langs.map((lang, index) => {
+                return (
+                  <li className="lang_li" key={index}>
+                    {lang}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <CheckDetails id={el.id} />
           <br />
         </div>
         <div className="img_wrapper  md:left-10">
@@ -36,7 +47,7 @@ const ListProject = Projects.map((el, index) => {
             />
           </a>
           <div className="absolute overflow-hidden right-0 -bottom-6 text-gy flex items-center">
-            <hr id="line" className="bg-wh w-20 h-px"></hr>
+            <hr id="line" className="bg-white w-20 h-px"></hr>
             <h6 className="ml-4">{el.type}</h6>
           </div>
         </div>
@@ -58,7 +69,7 @@ const ListProject = Projects.map((el, index) => {
             />
           </a>
           <div className="absolute overflow-hidden right-0 -bottom-6 text-gy flex items-center">
-            <hr id="line" className="bg-wh w-20 h-px"></hr>
+            <hr id="line" className="bg-white w-20 h-px"></hr>
             <p className="ml-4">{el.type}</p>
           </div>
         </div>
@@ -69,14 +80,25 @@ const ListProject = Projects.map((el, index) => {
           <h6 className="text-gy mb-3" data-aos="fade-up" data-aos-delay="100">
             {el.partner}
           </h6>
-          <h6
+          {/* <h6
             className="font-semibold tracking-wider"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             {el.langs}
-          </h6>
-          <ViewGit git={el.git} />
+          </h6> */}
+          <div>
+            <ul className="flex flex-wrap">
+              {el.langs.map((lang, index) => {
+                return (
+                  <li className="lang_li" key={index}>
+                    {lang}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <CheckDetails id={el.id} />
           <br />
         </div>
       </div>

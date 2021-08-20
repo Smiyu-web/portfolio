@@ -1,8 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 
 const Arrow = styled.div`
-  a {
+  div {
     color: #fff;
     font-size: 16px;
     margin: 10px 0 10px 10px;
@@ -13,24 +14,28 @@ const Arrow = styled.div`
     transition: 0.3s;
     cursor: pointer;
   }
-  a:hover {
+  div:hover {
     transform: scale(1.1);
   }
 `;
 
 const ViewArrow = (props) => {
+  const history = useHistory();
   return (
     <Arrow className="mt-10" data-aos="fade-up" data-aos-delay="300">
       <h5 className="tracking-wider">
-        View the Github
-        <a
-          href={props.git}
-          target="_blank"
-          rel="noopener noreferrer"
+        Check details
+        <div
           className="btnarrow4 text-xs tracking-wider"
+          onClick={() =>
+            history.push({
+              pathname: `workdetail/${props.id}`,
+              state: { id: `${props.id}` },
+            })
+          }
         >
           &rarr;
-        </a>
+        </div>
       </h5>
     </Arrow>
   );

@@ -30,6 +30,7 @@ module.exports = {
         lg: "24rem",
         xl: "30rem",
         xl2: "36rem",
+        "60vw": "60vw",
       },
       inset: {
         18: "4.5rem",
@@ -66,6 +67,11 @@ module.exports = {
         widest: ".25em",
         widest2: ".3rem",
       },
+      colors: {
+        bg: "#222222",
+        bg2: "#111111",
+        gy: "#858585",
+      },
     },
     screens: {
       all: "0px",
@@ -73,13 +79,6 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1440px",
-    },
-    colors: {
-      bg: "#222222",
-      bg2: "#111111",
-      bl: "#000000",
-      wh: "#FFFFFF",
-      gy: "#858585",
     },
   },
   variants: {

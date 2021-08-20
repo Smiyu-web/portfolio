@@ -77,7 +77,7 @@
 
 @layer base {
   body {
-    @apply font-sans tracking-wider bg-bg text-wh select-none;
+    @apply font-sans tracking-wider bg-bg text-white select-none;
   }
   h1 {
     @apply font-meddon text-4xl sm:text-5xl md:text-7xl lg:text-8xl;
@@ -111,40 +111,32 @@
     px-8 lg:pl-40 xl:pl-64 pt-100 pb-32
     pointer-events-none;
   }
-
   .layout_a {
     @apply bg-bg2 w-screen h-full relative z-10 text-left
     flex flex-col md:flex-row
     px-8 lg:pl-40 xl:pl-64  pt-16 pb-4 md:py-28 lg:py-40
     pointer-events-none;
   }
-
   .layout_wb {
     @apply bg-bg w-screen h-full relative z-10 text-left
     px-8 lg:pl-40 xl:pl-64 pt-28 pb-4 lg:py-40;
   }
-
   .line {
-    @apply absolute bg-gy w-px h-14 md:h-20 lg:h-24;
+    @apply absolute bg-gy w-px h-10 md:h-16;
   }
-
   .scroll {
     @apply absolute bg-gy w-px h-36;
   }
-
   .border_bottom {
-    @apply border-b border-wh pb-1;
+    @apply border-b border-white pb-1;
   }
-
   .nav {
     @apply text-gy z-30 text-tiny font-semibold py-2 tracking-widest2;
   }
-
   .history_date {
     @apply text-xs tracking-wider
     font-semibold text-gy;
   }
-
   .history_text {
     @apply text-xs lg:text-sm ml-4 py-2 lg:py-4;
   }
@@ -161,7 +153,7 @@
      md:my-32 overflow-hidden;
   }
   .img_bg {
-    @apply relative bg-wh
+    @apply relative bg-white
     w-64 h-64 md:w-72 md:h-72 
     lg:w-80 lg:h-80 xl:w-xl xl:h-lg;
   }
@@ -181,23 +173,27 @@
     text-4xl lg:text-5xl xl:text-6xl
     top-40 md:top-52 lg:top-64 xl:top-80;
   }
-
   .top_arrow {
     @apply inline w-6;
   }
-
   .hamburger_menu {
-    @apply w-screen h-screen absolute z-40 bg-wh bg-opacity-80
+    @apply w-screen h-screen absolute z-40 bg-white bg-opacity-80
     -inset-x-0 text-center pt-40;
   }
-
   .hamburger_ul {
-    @apply text-bl text-sm font-semibold py-2 tracking-widest2;
+    @apply text-black text-sm font-semibold py-2 tracking-widest2;
   }
-
   .menu_bar {
     @apply absolute z-50 cursor-pointer 
     bottom-0 -inset-x-0 mx-auto py-4 text-center
     tracking-widest2 text-tiny font-semibold;
+  }
+  .detail_link {
+    @apply flex items-end border border-gray-600 border-solid 
+    rounded-md bg-gray-600 py-2 px-3 my-10 mx-3;
+  }
+  .lang_li {
+    @apply border border-gray-700 border-solid text-xs
+    rounded-full bg-gray-700 py-2 px-5 my-1 mx-1;
   }
 }

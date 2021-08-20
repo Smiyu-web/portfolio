@@ -17,7 +17,9 @@ const TopArrow = () => {
     >
       <a href="#header">
         <img src={Arrow} alt="top" className="top_arrow" />
-        <p className="transform rotate-90 text-bl tracking-widest mt-6">TOP</p>
+        <p className="transform rotate-90 text-black tracking-widest mt-6">
+          TOP
+        </p>
       </a>
     </div>
   );

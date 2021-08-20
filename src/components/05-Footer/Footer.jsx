@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="sticky z-10 flex flex-col justify-center items-center w-screen h-screen bg-wh"
+      className="sticky z-10 flex flex-col justify-center items-center w-screen h-screen bg-white"
     >
       <TopArrow />
       <div className="relative bg-bg w-3/4 h-3/4">
