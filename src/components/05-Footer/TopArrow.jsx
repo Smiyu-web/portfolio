@@ -1,5 +1,4 @@
 import React from "react";
-import Arrow from "../../images/topArrow.png";
 
 const TopArrow = () => {
   const handleTop = () => {
@@ -10,15 +9,10 @@ const TopArrow = () => {
   };
 
   return (
-    <div
-      className="absolute right-5 top-100"
-      onClick={handleTop}
-      data-aos="fade-right"
-    >
+    <div className="absolute right-0 top-1000" onClick={handleTop}>
       <a href="#header">
-        <img src={Arrow} alt="top" className="top_arrow" />
-        <p className="transform rotate-90 text-black tracking-widest mt-6">
-          TOP
+        <p className="transform rotate-90 text-black tracking-widest">
+          BACK TO TOP
         </p>
       </a>
     </div>

@@ -1,7 +1,7 @@
-import premiere from "../../images/premiere.png";
-import yuco from "../../images/yuco.png";
-import am from "../../images/11am.png";
-import wecoop from "../../images/wecoop.png";
+import premiere from "../../images/premiere.jpeg";
+import yuco from "../../images/yuco.jpeg";
+import am from "../../images/11am.jpeg";
+import wecoop from "../../images/wecoop.jpeg";
 
 export const projects = [
   {
