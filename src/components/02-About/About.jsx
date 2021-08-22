@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Title from "../00-UI/Title";
 import History from "./History";
-import AboutImg from "./AboutImg";
 import ScrollTrigger from "react-scroll-trigger";
 import { TextAnimation } from "../00-UI/TextAnimation";
+import miyu from "../../images/miyuBK.jpg";
+import ViewTheResume from "./ViewTheResume";
 
 const About = () => {
   const [footervisible, setFooterVisible] = useState();
@@ -22,10 +23,10 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="layout_a">
-      <div className="md:w-1/2">
+    <div id="about" className="layout">
+      <div>
         <Title no="01" title="who i am" />
-        <div className="flex flex-col items-center">
+        <div className="block md:flex flex-col items-center">
           <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
             <h5
               className={`
@@ -33,18 +34,20 @@ const About = () => {
                  footervisible ? "textAnimation" : "invisible"
                } font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6`}
             >
-              My dream is that making something amaizing to people happy.
-              Contact me if you have a same dreame as me.
+              Miyu Setoyama is a passionate Frontend Developer who loves
+              creating new things. Expert knowledge of HTML, CSS, JavaScript,
+              and React. Familiar with Fullstack development, particularly the
+              MERN stack.
             </h5>
           </ScrollTrigger>
-          <History />
+          {/* <History /> */}
+          <ViewTheResume />
         </div>
       </div>
-      <AboutImg />
-      <div
-        id="line"
-        className="scroll line bottom-0 left-300 md:left-500"
-      ></div>
+      <div className="hidden md:block relative inset-0 m-auto ">
+        <div className="about_right about_rec"></div>
+        <img className="about_right about_img" src={miyu} alt="miyu" />
+      </div>
     </div>
   );
 };

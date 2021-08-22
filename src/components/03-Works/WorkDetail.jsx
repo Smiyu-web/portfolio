@@ -35,7 +35,7 @@ const WorkDetail = (props) => {
           <ul className="flex flex-wrap">
             {work.langs.map((lang, index) => {
               return (
-                <li className="lang_li" key={index}>
+                <li className="lang_li bg-gray-700 mx-1" key={index}>
                   {lang}
                 </li>
               );

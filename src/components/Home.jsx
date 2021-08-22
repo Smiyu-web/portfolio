@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ScrollTrigger from "react-scroll-trigger";
+
 import HamburgerMenu from "./00-UI/Hamburger/HamburgerMenu";
 import Navbar from "./00-UI/Navbar";
 import Header from "./01-Header/Header";

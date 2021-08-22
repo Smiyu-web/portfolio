@@ -41,18 +41,6 @@
   }
 }
 
-/* slider slick */
-.slider .slick-slide {
-  transform: scale(0.8); /*左右の画像のサイズを80%に*/
-  transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
-  opacity: 1; /*透過50%*/
-}
-
-.slider .slick-slide.slick-center {
-  transform: scale(1); /*中央の画像のサイズだけ等倍に*/
-  opacity: 1; /*透過なし*/
-}
-
 /* text animation */
 @keyframes showTextFromBottom {
   0% {
@@ -82,7 +70,6 @@
   h1 {
     @apply font-meddon text-4xl sm:text-5xl md:text-7xl lg:text-8xl;
   }
-
   h2 {
     @apply text-3xl md:text-4xl lg:text-7xl;
   }
@@ -92,11 +79,9 @@
   h4 {
     @apply text-base sm:text-xl md:text-2xl lg:text-3xl;
   }
-
   h5 {
     @apply text-sm;
   }
-
   h6 {
     @apply text-xs md:text-sm;
   }
@@ -106,20 +91,9 @@
 }
 
 @layer components {
-  .layout_h {
-    @apply w-screen h-screen lg:h-950 sticky top-0 z-10 text-left 
-    px-8 lg:pl-40 xl:pl-64 pt-100 pb-32
-    pointer-events-none;
-  }
-  .layout_a {
-    @apply bg-bg2 w-screen h-full relative z-10 text-left
-    flex flex-col md:flex-row
-    px-8 lg:pl-40 xl:pl-64  pt-16 pb-4 md:py-28 lg:py-40
-    pointer-events-none;
-  }
-  .layout_wb {
-    @apply bg-bg w-screen h-full relative z-10 text-left
-    px-8 lg:pl-40 xl:pl-64 pt-28 pb-4 lg:py-40;
+  .layout {
+    @apply w-screen px-8 lg:pl-40 xl:pl-64
+    pointer-events-auto;
   }
   .line {
     @apply absolute bg-gy w-px h-10 md:h-16;
@@ -127,54 +101,8 @@
   .scroll {
     @apply absolute bg-gy w-px h-36;
   }
-  .border_bottom {
-    @apply border-b border-white pb-1;
-  }
   .nav {
     @apply text-gy z-30 text-tiny font-semibold py-2 tracking-widest2;
-  }
-  .history_date {
-    @apply text-xs tracking-wider
-    font-semibold text-gy;
-  }
-  .history_text {
-    @apply text-xs lg:text-sm ml-4 py-2 lg:py-4;
-  }
-  .aboutImg {
-    @apply absolute w-40 md:w-60 lg:w-64;
-  }
-  .work_right {
-    @apply flex flex-col-reverse md:flex-row 
-    my-10 md:my-32 
-    overflow-hidden;
-  }
-  .work_left {
-    @apply flex flex-col  md:flex-row 
-     md:my-32 overflow-hidden;
-  }
-  .img_bg {
-    @apply relative bg-white
-    w-64 h-64 md:w-72 md:h-72 
-    lg:w-80 lg:h-80 xl:w-xl xl:h-lg;
-  }
-  .work_img {
-    @apply absolute  
-    top-18 lg:top-24 xl:top-20 
-    left-6 lg:left-8 xl:left-12
-    w-52 md:w-60 lg:w-64 xl:w-lg;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-  }
-  .img_wrapper {
-    @apply relative right-0 left-0 
-    m-auto md:m-0 text-center;
-  }
-  .work_name {
-    @apply absolute font-bold 
-    text-4xl lg:text-5xl xl:text-6xl
-    top-40 md:top-52 lg:top-64 xl:top-80;
-  }
-  .top_arrow {
-    @apply inline w-6;
   }
   .hamburger_menu {
     @apply w-screen h-screen absolute z-40 bg-white bg-opacity-80
@@ -188,12 +116,63 @@
     bottom-0 -inset-x-0 mx-auto py-4 text-center
     tracking-widest2 text-tiny font-semibold;
   }
+
+  /* header */
+  #header {
+    @apply relative bg-bg h-95vh z-10
+    flex flex-col justify-center;
+  }
+  #about {
+    @apply relative bg-bg2 h-screen z-10 
+    flex items-center 
+    md:grid grid-flow-col grid-cols-2;
+  }
+  .about_right {
+    @apply w-40 md:w-60 lg:w-64;
+  }
+  .about_rec {
+    @apply border border-white border-solid  
+    top-0 h-52 md:h-80 lg:h-20rem;
+  }
+  .about_img {
+    @apply absolute top-10 left-10;
+  }
+  .history_date {
+    @apply text-xs tracking-wider
+    font-semibold text-gy;
+  }
+  .history_text {
+    @apply text-xs lg:text-sm ml-4 py-2 lg:py-4;
+  }
+
+  /* work */
+  #works {
+    @apply relative bg-bg2 h-full z-10 mb-screen
+    flex flex-col justify-center;
+  }
+  .work_img_slide {
+    @apply absolute inset-0 m-auto overflow-hidden
+    w-30rem;
+    transition: 1s all;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  }
   .detail_link {
     @apply flex items-end border border-gray-600 border-solid 
     rounded-md bg-gray-600 py-2 px-3 my-10 mx-3;
   }
   .lang_li {
     @apply border border-gray-700 border-solid text-xs
-    rounded-full bg-gray-700 py-2 px-5 my-1 mx-1;
+    rounded-full py-2 px-5 my-1;
   }
+
+  /* footer */
+  #footer {
+    @apply bg-white h-screen z-1 fixed top-0 right-0 bottom-0
+    flex flex-col justify-center items-center;
+  }
+}
+
+.work_img_slide:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
 }

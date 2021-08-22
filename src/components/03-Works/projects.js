@@ -1,18 +1,48 @@
 import premiere from "../../images/premiere.jpeg";
-import yuco from "../../images/yuco.jpeg";
-import am from "../../images/11am.jpeg";
 import wecoop from "../../images/wecoop.jpeg";
+import airbnb from "../../images/airbnb.jpeg";
 
 export const projects = [
+  {
+    title: "Airbnb",
+    id: "airbnb",
+    image: airbnb,
+    url: "https://airbnb-project.vercel.app/",
+    git: "https://github.com/hiro9108/airbnb-project",
+    type: "AIRBNB CLONE APP",
+    langs: [
+      "Next.js",
+      "React",
+      "React Redux",
+      "TypeScript",
+      "Apollo Client",
+      "Tailwind",
+      "AWS Cognito",
+      "AWS APP SYNC",
+      "AWS DynamoDB",
+    ],
+    about:
+      "An airbnb clone app. We made this to study new language such as GraphQL, Appllo Client, and AWS database.",
+  },
+  {
+    title: "premiere",
+    id: "premiere",
+    image: premiere,
+    url: "https://premiere-st.netlify.app/",
+    git: "https://github.com/ayumitanaka13/premiere",
+    type: "E-COMMERCE WEBSITE",
+    langs: ["HTML", "SASS", "JavaScript", "jQuery", "Django"],
+    about:
+      "A mockup eCommerce website for the select interior shop based in Vancouver, Canada.",
+  },
   {
     title: "we co-op",
     id: "wecoop",
     image: wecoop,
     url: "https://we-coop.netlify.app/",
     git: "https://github.com/We-Coop-Project",
-    type: "TIME MANAGEMENT",
+    type: "TIME MANAGEMENT APP",
     langs: ["React", "Tailwind", "Python", "Django", "PostgreSQL", "Firebase"],
-    partner: "with Ami, Ayumi, Hiro",
     about:
       "We CO-OP is a co-op time management web application. We want to do something useful for students who go to school like us. This app was created in that process, and we hope it will be useful to everyone.",
   },
@@ -22,29 +52,10 @@ export const projects = [
     image: premiere,
     url: "https://premiere-st.netlify.app/",
     git: "https://github.com/ayumitanaka13/premiere",
-    type: "E-COMMERCE",
+    type: "E-COMMERCE WEBSITE",
     langs: ["HTML", "SASS", "JavaScript", "jQuery", "Django"],
-    partner: "with Ayumi Tanaka",
-  },
-  {
-    title: "yu + co.",
-    id: "yuco",
-    image: yuco,
-    url: "https://adoring-tesla-c7c25f.netlify.app/",
-    git: "https://github.com/Smiyu-web/yuco-finalProject",
-    type: "WEBSITE",
-    langs: ["HTML", "SASS", "JavaScript"],
-    partner: "Individual project",
-  },
-  {
-    title: "11am",
-    id: "am",
-    image: am,
-    url: "https://premiere-st.netlify.app/",
-    git: "https://github.com/Smiyu-web/portfolio-11am",
-    type: "WEBSITE",
-    langs: ["HTML", "SASS", "JavaScript", "jQuery"],
-    partner: "with Ivan, Inae, Ami",
+    about:
+      "A mockup eCommerce website for the select interior shop based in Vancouver, Canada.",
   },
 ];
 

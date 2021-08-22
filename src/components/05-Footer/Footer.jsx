@@ -18,15 +18,13 @@ const Footer = () => {
   const onExitViewport = () => {
     setVisible(false);
   };
+
   return (
-    <footer
-      id="footer"
-      className="sticky z-10 flex flex-col justify-center items-center w-screen h-screen bg-white"
-    >
+    <footer id="footer" className="layout">
       <TopArrow />
-      <div className="relative bg-bg w-3/4 h-3/4">
+      <div className="">
         <h6
-          className="absolute inset-0 m-auto text-center top-1/2"
+          className="absolute inset-0 m-auto text-center top-1/2 text-bg"
           data-aos="fade-up"
         >
           miyuuu0728@gmail.com

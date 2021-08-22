@@ -19,9 +19,9 @@ const Header = () => {
   };
 
   return (
-    <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-      <div id="header" className="layout_h">
-        <div className="pl-100 pt-300 md:pt-100">
+    <div id="header" className="layout">
+      <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
+        <div className="pl-100">
           <div>
             <h1 className="mb-8 h-30" data-aos="fade-right">
               miyu
@@ -51,8 +51,8 @@ const Header = () => {
           data-aos="fade-up"
           data-aos-offset="-300"
         ></div>
-      </div>
-    </ScrollTrigger>
+      </ScrollTrigger>
+    </div>
   );
 };
 

@@ -19,12 +19,12 @@ const Arrow = styled.div`
   }
 `;
 
-const ViewArrow = (props) => {
+const ViewTheResume = (props) => {
   const history = useHistory();
   return (
-    <Arrow className="mt-10" data-aos="fade-up" data-aos-delay="300">
+    <Arrow data-aos="fade-up" data-aos-delay="300">
       <h5 className="tracking-wider">
-        Check details
+        ViewTheResume
         <div
           className="btnarrow4 text-xs tracking-wider"
           onClick={() =>
@@ -41,4 +41,4 @@ const ViewArrow = (props) => {
   );
 };
 
-export default ViewArrow;
+export default ViewTheResume;

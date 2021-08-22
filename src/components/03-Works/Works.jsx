@@ -1,13 +1,12 @@
 import React from "react";
 import Title from "../00-UI/Title";
-import Slides from "./Slides";
+import SlideF from "./SlideF";
 
 const Works = () => {
   return (
-    <div id="works" className="layout_wb">
+    <div id="works" className="layout">
       <Title no="02" title="works" className="left-500" />
-      <Slides />
-      <div id="line" className="scroll line bottom-0 right-400"></div>
+      <SlideF />
     </div>
   );
 };
