@@ -15,7 +15,7 @@ const SlideF = () => {
               <div
                 id="right"
                 key={index}
-                className="md:flex justify-between my-20 mx-10"
+                className="flex flex-col-reverse md:flex-row justify-between my-20 lg:mx-10"
               >
                 <div className="flex flex-col ml-5">
                   <h4
@@ -44,11 +44,8 @@ const SlideF = () => {
                     })
                   }
                 >
-                  {/* <div
-                    id="img_bg"
-                    className="bg-white opacity-70 h-40rem w-40rem"
-                  ></div> */}
-                  <img src={el.image} className="opacity-20 h-40rem w-40rem" />
+                  <div id="img_bg" className="work_img_rec"></div>
+                  {/* <img src={el.image} className="work_img_rec" /> */}
                   <div class="mx-auto overflow-hidden">
                     <img src={el.image} className="work_img_slide" />
                   </div>
@@ -62,9 +59,9 @@ const SlideF = () => {
               <div
                 id="left"
                 key={index}
-                className="md:flex flex-row-reverse justify-between my-20 mx-10"
+                className="flex flex-col-reverse md:flex-row-reverse justify-between my-20 lg:mx-10"
               >
-                <div className="flex flex-col justify-end pr-14">
+                <div className="flex flex-col justify-end pl-5 lg:pr-14">
                   <h4
                     className="font-meddon"
                     data-aos="fade-up"
@@ -73,7 +70,7 @@ const SlideF = () => {
                     {el.title}
                   </h4>
                   <h4
-                    className="font-extralight	text-gray-400 mt-5"
+                    className="font-extralight text-gray-400 mt-5"
                     data-aos="fade-up"
                     data-aos-delay="500"
                   >
@@ -91,10 +88,7 @@ const SlideF = () => {
                     })
                   }
                 >
-                  <div
-                    id="img_bg"
-                    className="bg-white opacity-70 h-40rem w-40rem"
-                  ></div>
+                  <div id="img_bg" className="work_img_rec"></div>
                   <div class="mx-auto overflow-hidden">
                     <img src={el.image} className="work_img_slide" />
                   </div>

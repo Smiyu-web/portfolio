@@ -41,8 +41,8 @@ const About = () => {
             </h5>
           </ScrollTrigger>
           {/* <History /> */}
-          <ViewTheResume />
         </div>
+        <ViewTheResume />
       </div>
       <div className="hidden md:block relative inset-0 m-auto ">
         <div className="about_right about_rec"></div>
