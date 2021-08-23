@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const ViewTheResume = (props) => {
   const history = useHistory();
   return (
-    <div data-aos="fade-up" data-aos-delay="300">
+    <div className="ml-5" data-aos="fade-up" data-aos-delay="300">
       <h5 className="tracking-wider">
         View resume
         <div

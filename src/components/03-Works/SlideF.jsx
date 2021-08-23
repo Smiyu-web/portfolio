@@ -21,14 +21,14 @@ const SlideF = () => {
                   <h4
                     className="font-meddon"
                     data-aos="fade-up"
-                    data-aos-delay="100"
+                    data-aos-delay="200"
                   >
                     {el.title}
                   </h4>
                   <h4
                     className="font-extralight	text-gray-400 mt-5"
                     data-aos="fade-up"
-                    data-aos-delay="200"
+                    data-aos-delay="300"
                   >
                     {el.type}
                   </h4>
@@ -43,6 +43,8 @@ const SlideF = () => {
                       state: { id: `${el.id}` },
                     })
                   }
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                 >
                   <div id="img_bg" className="work_img_rec"></div>
                   {/* <img src={el.image} className="work_img_rec" /> */}
@@ -65,14 +67,14 @@ const SlideF = () => {
                   <h4
                     className="font-meddon"
                     data-aos="fade-up"
-                    data-aos-delay="400"
+                    data-aos-delay="200"
                   >
                     {el.title}
                   </h4>
                   <h4
                     className="font-extralight text-gray-400 mt-5"
                     data-aos="fade-up"
-                    data-aos-delay="500"
+                    data-aos-delay="300"
                   >
                     {el.type}
                   </h4>
@@ -87,6 +89,8 @@ const SlideF = () => {
                       state: { id: `${el.id}` },
                     })
                   }
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                 >
                   <div id="img_bg" className="work_img_rec"></div>
                   <div class="mx-auto overflow-hidden">

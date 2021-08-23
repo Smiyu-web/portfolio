@@ -32,14 +32,18 @@ const Header = () => {
           </div>
           <ul className="font-medium tracking-wider text-xs md:text-base pl-200 pt-10">
             <li
-              className={`
-               ${visible ? "textAnimation" : "invisible"} `}
+              // className={`
+              //  ${visible ? "textAnimation" : "invisible"} `}
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               Front End Developer
             </li>
             <li
-              className={`
-               ${visible ? "textAnimation" : "invisible"}`}
+              // className={`
+              //  ${visible ? "textAnimation" : "invisible"}`}
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               Base in Vancouver. Born in Japan.
             </li>

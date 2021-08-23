@@ -29,10 +29,13 @@ const About = () => {
         <div className="block md:flex flex-col items-center">
           <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
             <h5
-              className={`
-               ${
-                 footervisible ? "textAnimation" : "invisible"
-               } font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6`}
+              // className={`
+              //  ${
+              //    footervisible ? "textAnimation" : "invisible"
+              //  } font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6`}
+              className="font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
             >
               Miyu Setoyama is a passionate Frontend Developer who loves
               creating new things. Expert knowledge of HTML, CSS, JavaScript,
@@ -44,9 +47,15 @@ const About = () => {
         </div>
         <ViewTheResume />
       </div>
-      <div className="hidden md:block relative inset-0 m-auto ">
-        <div className="about_right about_rec"></div>
-        <img className="about_right about_img" src={miyu} alt="miyu" />
+      <div className="hidden md:block relative inset-0 m-auto">
+        <div className="about_right about_rec" data-aos="fade-up"></div>
+        <img
+          className="about_right about_img"
+          src={miyu}
+          alt="miyu"
+          data-aos="fade-up"
+          data-aos-delay="50"
+        />
       </div>
     </div>
   );
