@@ -16,7 +16,7 @@ const WorkDetail = (props) => {
         </h3>
       </div>
       <div className="flex justify-center">
-        <img src={work.image} alt={work.title} className="w-60vw" />
+        <img src={work.imageD} alt={work.title} className="w-60vw" />
       </div>
       <div className="flex justify-center">
         <a href={work.git} className="detail_link">

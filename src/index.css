@@ -160,13 +160,13 @@
   .work_img_slide {
     transition: 1s all;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-    @apply absolute inset-0 m-auto overflow-hidden
+    @apply absolute inset-0 m-auto overflow-hidden cursor-pointer
     w-56 sm:w-72 md:w-24rem lg:w-30rem;
   }
   .work_img_mobile {
     transition: 1s all;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
-    @apply absolute inset-0 m-auto overflow-hidden
+    @apply absolute inset-0 m-auto overflow-hidden cursor-pointer
     w-56 sm:w-72 md:w-56 lg:w-56;
   }
   .detail_link {

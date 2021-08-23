@@ -98,7 +98,7 @@ const SlideF = () => {
                     <img
                       src={el.image}
                       alt={el.title}
-                      className="work_img_slide"
+                      className={el.imageClass}
                     />
                   </div>
                 </div>
