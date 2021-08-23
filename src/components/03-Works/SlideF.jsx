@@ -47,7 +47,11 @@ const SlideF = () => {
                 >
                   <div id="img_bg" className="work_img_rec"></div>
                   <div className="mx-auto overflow-hidden">
-                    <img src={el.image} className={el.imageClass} />
+                    <img
+                      src={el.image}
+                      alt={el.title}
+                      className={el.imageClass}
+                    />
                   </div>
                 </div>
               </div>
@@ -91,7 +95,11 @@ const SlideF = () => {
                 >
                   <div id="img_bg" className="work_img_rec"></div>
                   <div className="mx-auto overflow-hidden">
-                    <img src={el.image} className="work_img_slide" />
+                    <img
+                      src={el.image}
+                      alt={el.title}
+                      className="work_img_slide"
+                    />
                   </div>
                 </div>
               </div>
