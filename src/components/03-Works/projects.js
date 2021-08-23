@@ -1,12 +1,34 @@
 import premiere from "../../images/premiere.jpeg";
 import wecoop from "../../images/wecoop.jpeg";
 import airbnb from "../../images/airbnb.jpeg";
+import pawly from "../../images/pawly.jpeg";
 
 export const projects = [
   {
-    title: "Airbnb",
+    title: "pawly",
+    id: "pawly",
+    image: pawly,
+    imageClass: "work_img_mobile",
+    url: "https://pawly.vercel.app/",
+    git: "https://github.com/Smiyu-web/pawly-client",
+    type: "PUPPY HEALTH MANAGEMENT APP",
+    langs: [
+      "Next.js",
+      "React",
+      "React Redux",
+      "Apollo Client",
+      "Tailwind CSS",
+      "MongoDB",
+      "Express",
+      "Apollo Server Express",
+    ],
+    about: "Pawly is a puppy health management app with MERN and GraphQL.",
+  },
+  {
+    title: "airbnb",
     id: "airbnb",
     image: airbnb,
+    imageClass: "work_img_slide",
     url: "https://airbnb-project.vercel.app/",
     git: "https://github.com/hiro9108/airbnb-project",
     type: "AIRBNB CLONE APP",
@@ -16,7 +38,7 @@ export const projects = [
       "React Redux",
       "TypeScript",
       "Apollo Client",
-      "Tailwind",
+      "Tailwind CSS",
       "AWS Cognito",
       "AWS APP SYNC",
       "AWS DynamoDB",
@@ -25,20 +47,22 @@ export const projects = [
       "An airbnb clone app. We made this to study new language such as GraphQL, Appllo Client, and AWS database.",
   },
   {
-    title: "premiere",
-    id: "premiere",
+    title: "planimal",
+    id: "planimal",
     image: premiere,
-    url: "https://premiere-st.netlify.app/",
-    git: "https://github.com/ayumitanaka13/premiere",
-    type: "E-COMMERCE WEBSITE",
-    langs: ["HTML", "SASS", "JavaScript", "jQuery", "Django"],
+    imageClass: "work_img_slide",
+    url: "https://planimal-app.vercel.app/",
+    git: "https://github.com/Smiyu-web/planimal-app",
+    type: "RETAIL/WHOLESALE E-COMMERCE",
+    langs: ["React", "React Redux", "Tailwind CSS", "MongoDB", "Express"],
     about:
-      "A mockup eCommerce website for the select interior shop based in Vancouver, Canada.",
+      "Planimal is a retail/website plants store. This is MERN application.",
   },
   {
     title: "we co-op",
     id: "wecoop",
     image: wecoop,
+    imageClass: "work_img_slide",
     url: "https://we-coop.netlify.app/",
     git: "https://github.com/We-Coop-Project",
     type: "TIME MANAGEMENT APP",
@@ -50,6 +74,7 @@ export const projects = [
     title: "premiere",
     id: "premiere",
     image: premiere,
+    imageClass: "work_img_slide",
     url: "https://premiere-st.netlify.app/",
     git: "https://github.com/ayumitanaka13/premiere",
     type: "E-COMMERCE WEBSITE",

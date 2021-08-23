@@ -11,10 +11,9 @@ const SlideF = () => {
       {projects.map((el, index) => {
         if (index % 2 === 0) {
           return (
-            <div>
+            <div key={index}>
               <div
                 id="right"
-                key={index}
                 className="flex flex-col-reverse md:flex-row justify-between my-20 lg:mx-10"
               >
                 <div className="flex flex-col ml-5">
@@ -47,9 +46,8 @@ const SlideF = () => {
                   data-aos-delay="100"
                 >
                   <div id="img_bg" className="work_img_rec"></div>
-                  {/* <img src={el.image} className="work_img_rec" /> */}
-                  <div class="mx-auto overflow-hidden">
-                    <img src={el.image} className="work_img_slide" />
+                  <div className="mx-auto overflow-hidden">
+                    <img src={el.image} className={el.imageClass} />
                   </div>
                 </div>
               </div>
@@ -57,10 +55,9 @@ const SlideF = () => {
           );
         } else {
           return (
-            <div>
+            <div key={index}>
               <div
                 id="left"
-                key={index}
                 className="flex flex-col-reverse md:flex-row-reverse justify-between my-20 lg:mx-10"
               >
                 <div className="flex flex-col justify-end pl-5 lg:pr-14">
@@ -93,7 +90,7 @@ const SlideF = () => {
                   data-aos-delay="100"
                 >
                   <div id="img_bg" className="work_img_rec"></div>
-                  <div class="mx-auto overflow-hidden">
+                  <div className="mx-auto overflow-hidden">
                     <img src={el.image} className="work_img_slide" />
                   </div>
                 </div>
