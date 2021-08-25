@@ -30,7 +30,7 @@ const Header = () => {
               setoyama
             </h1>
           </div>
-          <ul className="font-medium tracking-wider text-xs md:text-base pl-200 pt-10">
+          <ul className="tracking-wider text-xs md:text-base pl-200 pt-10">
             <li
               // className={`
               //  ${visible ? "textAnimation" : "invisible"} `}
