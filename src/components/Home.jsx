@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import ScrollTrigger from "react-scroll-trigger";
+import React from "react";
 
 import HamburgerMenu from "./00-UI/Hamburger/HamburgerMenu";
 import Navbar from "./00-UI/Navbar";

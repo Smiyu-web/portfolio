@@ -50,7 +50,7 @@ const SlideF = () => {
                     <img
                       src={el.image}
                       alt={el.title}
-                      className={el.imageClass}
+                      className="work_img_slide"
                     />
                   </div>
                 </div>
@@ -98,7 +98,7 @@ const SlideF = () => {
                     <img
                       src={el.image}
                       alt={el.title}
-                      className={el.imageClass}
+                      className="work_img_slide"
                     />
                   </div>
                 </div>

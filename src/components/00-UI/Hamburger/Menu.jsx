@@ -52,7 +52,7 @@ const Menu = (props) => {
               <a
                 href="https://github.com/Smiyu-web"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
@@ -68,7 +68,7 @@ const Menu = (props) => {
               <a
                 href="https://www.linkedin.com/in/miyu-setoyama-35789219a/"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>

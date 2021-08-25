@@ -22,12 +22,12 @@ const Footer = () => {
   return (
     <footer id="footer" className="layout">
       <TopArrow />
-      <div className="">
+      <div>
         <h6
           className="absolute inset-0 m-auto text-center top-1/2 text-bg"
           data-aos="fade-up"
         >
-          miyuuu0728@gmail.com
+          <a href="mailto:miyuuu0728@gmail.com">miyuuu0728@gmail.com</a>
         </h6>
         <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
           <h4

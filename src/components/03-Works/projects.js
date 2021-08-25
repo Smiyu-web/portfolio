@@ -2,14 +2,13 @@ import premiere from "../../images/premiere.jpeg";
 import wecoop from "../../images/wecoop.jpeg";
 import airbnb from "../../images/airbnb.jpeg";
 import pawly from "../../images/pawly.jpeg";
+import planimal from "../../images/planimal.jpeg";
 
 export const projects = [
   {
     title: "pawly",
     id: "pawly",
     image: pawly,
-    imageD: airbnb,
-    imageClass: "work_img_mobile",
     url: "https://pawly.vercel.app/",
     git: "https://github.com/Smiyu-web/pawly-client",
     type: "PUPPY HEALTH MANAGEMENT APP",
@@ -29,8 +28,6 @@ export const projects = [
     title: "airbnb",
     id: "airbnb",
     image: airbnb,
-    imageD: airbnb,
-    imageClass: "work_img_slide",
     url: "https://airbnb-project.vercel.app/",
     git: "https://github.com/hiro9108/airbnb-project",
     type: "AIRBNB CLONE APP",
@@ -51,9 +48,7 @@ export const projects = [
   {
     title: "planimal",
     id: "planimal",
-    image: premiere,
-    imageD: premiere,
-    imageClass: "work_img_slide",
+    image: planimal,
     url: "https://planimal-app.vercel.app/",
     git: "https://github.com/Smiyu-web/planimal-app",
     type: "RETAIL/WHOLESALE E-COMMERCE",
@@ -65,8 +60,6 @@ export const projects = [
     title: "we co-op",
     id: "wecoop",
     image: wecoop,
-    imageD: wecoop,
-    imageClass: "work_img_slide",
     url: "https://we-coop.netlify.app/",
     git: "https://github.com/We-Coop-Project",
     type: "TIME MANAGEMENT APP",
@@ -78,7 +71,6 @@ export const projects = [
     title: "premiere",
     id: "premiere",
     image: premiere,
-    imageClass: "work_img_slide",
     url: "https://premiere-st.netlify.app/",
     git: "https://github.com/ayumitanaka13/premiere",
     type: "E-COMMERCE WEBSITE",

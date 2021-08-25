@@ -27,13 +27,17 @@ const Navbar = () => {
         <ul className="cursor-pointer">{ListItem}</ul>
         <hr className="w-8 my-4 text-gy" />
         <ul>
-          <a href="https://github.com/Smiyu-web" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/Smiyu-web"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <li className="nav cursor-pointer">Github</li>
           </a>
           <a
             href="https://www.linkedin.com/in/miyu-setoyama-35789219a/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <li className="nav cursor-pointer">LinkedIn</li>
           </a>

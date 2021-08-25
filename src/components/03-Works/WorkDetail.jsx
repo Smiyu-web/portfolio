@@ -15,10 +15,18 @@ const WorkDetail = (props) => {
           {work.title}
         </h3>
       </div>
-      <div className="flex justify-center">
-        <img src={work.imageD} alt={work.title} className="w-60vw" />
+      <div
+        className="flex justify-center"
+        data-aos="fade-up"
+        data-aos-delay="50"
+      >
+        <img src={work.image} alt={work.title} className="w-60vw" />
       </div>
-      <div className="flex justify-center">
+      <div
+        className="flex justify-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <a href={work.git} className="detail_link">
           <FontAwesomeIcon icon={faLaptopCode} size="lg" />
           <h6 className="ml-1">github</h6>
@@ -29,10 +37,22 @@ const WorkDetail = (props) => {
         </a>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h3>About</h3>
-        <h5 className="w-60vw my-10 text-center">{work.about}</h5>
+        <h3 data-aos="fade-up" data-aos-delay="150">
+          About
+        </h3>
+        <h5
+          className="w-60vw my-10 text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          {work.about}
+        </h5>
         <div>
-          <ul className="flex flex-wrap">
+          <ul
+            className="flex flex-wrap justify-center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             {work.langs.map((lang, index) => {
               return (
                 <li className="lang_li bg-gray-700 mx-1" key={index}>
