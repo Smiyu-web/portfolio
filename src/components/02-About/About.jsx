@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../00-UI/Title";
-import miyu from "../../images/miyuBK.jp2";
+import miyu from "../../images/miyuBK-min.jp2";
 import ViewTheResume from "./ViewTheResume";
 
 const About = () => {
