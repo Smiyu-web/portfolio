@@ -17,13 +17,13 @@ const SlideF = () => {
                 className="flex flex-col-reverse md:flex-row justify-between my-20 lg:mx-10"
               >
                 <div className="flex flex-col ml-5">
-                  <h4
+                  <h3
                     className="font-meddon"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
                     {el.title}
-                  </h4>
+                  </h3>
                   <h4
                     className="font-extralight	text-gray-400 mt-5"
                     data-aos="fade-up"
