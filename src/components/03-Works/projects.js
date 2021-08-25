@@ -1,8 +1,8 @@
-import premiere from "../../images/premiere-min.jp2";
-import wecoop from "../../images/wecoop-min.jp2";
-import airbnb from "../../images/airbnb-min.jp2";
-import pawly from "../../images/pawly-min.jp2";
-import planimal from "../../images/planimal-min.jp2";
+import premiere from "../../images/premiere.jp2";
+import wecoop from "../../images/wecoop.jp2";
+import airbnb from "../../images/airbnb.jp2";
+import pawly from "../../images/pawly.jp2";
+import planimal from "../../images/planimal.jp2";
 
 export const projects = [
   {
