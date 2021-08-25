@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Title from "../00-UI/Title";
 import ScrollTrigger from "react-scroll-trigger";
 import { TextAnimation } from "../00-UI/TextAnimation";
-import miyu from "../../images/miyuBK.jpg";
+import miyu from "../../images/miyuBK.jp2";
 import ViewTheResume from "./ViewTheResume";
 
 const About = () => {
