@@ -27,12 +27,12 @@ const About = () => {
         <Title no="01" title="who i am" />
         <div className="block md:flex flex-col items-center">
           <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-            <h5
+            <div
               // className={`
               //  ${
               //    footervisible ? "textAnimation" : "invisible"
               //  } font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6`}
-              className="font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6"
+              className="text-sm font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -40,7 +40,7 @@ const About = () => {
               creating new things. Expert knowledge of HTML, CSS, JavaScript,
               and React. Familiar with Fullstack development, particularly the
               MERN stack.
-            </h5>
+            </div>
           </ScrollTrigger>
           {/* <History /> */}
         </div>
