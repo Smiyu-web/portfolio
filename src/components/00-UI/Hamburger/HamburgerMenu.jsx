@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Menu from "./Menu";
-import "./hamburger.css";
+// import "./hamburger.css";
 
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);

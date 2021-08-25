@@ -5,7 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import BounceLoader from "react-spinners/BounceLoader";
 import { css } from "@emotion/core";
-import "../src/components/00-UI/TextAnimation";
 import WorkDetail from "./components/03-Works/WorkDetail";
 import Home from "./components/Home";
 

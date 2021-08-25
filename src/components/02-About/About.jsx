@@ -1,48 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Title from "../00-UI/Title";
-import ScrollTrigger from "react-scroll-trigger";
-import { TextAnimation } from "../00-UI/TextAnimation";
 import miyu from "../../images/miyuBK.jp2";
 import ViewTheResume from "./ViewTheResume";
 
 const About = () => {
-  const [footervisible, setFooterVisible] = useState();
-
-  useEffect(() => {
-    if (footervisible) {
-      TextAnimation();
-    }
-  }, [footervisible]);
-
-  const onEnterViewport = () => {
-    setFooterVisible(true);
-  };
-  const onExitViewport = () => {
-    setFooterVisible(false);
-  };
-
   return (
     <div id="about" className="layout">
       <div>
         <Title no="01" title="who i am" />
         <div className="block md:flex flex-col items-center">
-          <ScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-            <div
-              // className={`
-              //  ${
-              //    footervisible ? "textAnimation" : "invisible"
-              //  } font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6`}
-              className="text-sm font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              Miyu Setoyama is a passionate Frontend Developer who loves
-              creating new things. Expert knowledge of HTML, CSS, JavaScript,
-              and React. Familiar with Fullstack development, particularly the
-              MERN stack.
-            </div>
-          </ScrollTrigger>
-          {/* <History /> */}
+          <div
+            className="text-sm font-light my-12 md:my-10 lg:my-16 mx-4 md:mx-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Miyu Setoyama is a passionate Frontend Developer who loves creating
+            new things. Expert knowledge of HTML, CSS, JavaScript, and React.
+            Familiar with Fullstack development, particularly the MERN stack.
+          </div>
         </div>
         <ViewTheResume />
       </div>

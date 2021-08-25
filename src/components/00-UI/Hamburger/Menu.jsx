@@ -14,7 +14,6 @@ const Menu = (props) => {
   const menus = [
     { link: "#about", text: "WHO I AM", delay: "0.1s" },
     { link: "#works", text: "WORKS", delay: "0.2s" },
-    // { link: "#blogs", text: "BLOGS", delay: "0.3s" },
     { link: "#footer", text: "CONTACT", delay: "0.3s" },
   ];
 
