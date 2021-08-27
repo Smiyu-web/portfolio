@@ -14,7 +14,7 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className="lg:hidden h-screen w-screen fixed z-40">
+    <div className="lg:hidden h-screen w-screen fixed z-40 pointer-events-none">
       {!menuOpen ? (
         <div
           className="menu_bar"

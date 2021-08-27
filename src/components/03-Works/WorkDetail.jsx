@@ -27,11 +27,21 @@ const WorkDetail = (props) => {
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        <a href={work.git} className="detail_link">
+        <a
+          href={work.git}
+          className="detail_link"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faLaptopCode} size="lg" />
           <h6 className="ml-1">github</h6>
         </a>
-        <a href={work.url} className="detail_link">
+        <a
+          href={work.url}
+          className="detail_link"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FontAwesomeIcon icon={faLaptop} size="lg" />
           <h6 className="ml-1">site</h6>
         </a>

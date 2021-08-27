@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
-const Menu = (props) => {
-  const [open, setOpen] = useState(props.isOpen);
-
-  useEffect(() => {
-    if (props.isOpen !== open) {
-      setOpen(props.isOpen);
-    }
-  }, [props]);
-
+const Menu = ({ isOpen }) => {
   const menus = [
     { link: "#about", text: "WHO I AM", delay: "0.1s" },
     { link: "#works", text: "WORKS", delay: "0.2s" },
@@ -36,8 +28,8 @@ const Menu = (props) => {
 
   return (
     <div>
-      {open ? (
-        <div className="hamburger_menu">
+      {isOpen ? (
+        <div id="hamburger_menu" className="hamburger_menu">
           <ul className="hamburger_ul">{ListItem}</ul>
           <ul className="hamburger_ul ring-black flex justify-center">
             <li
