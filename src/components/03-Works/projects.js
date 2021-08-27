@@ -22,7 +22,8 @@ export const projects = [
       "Express",
       "Apollo Server Express",
     ],
-    about: "Pawly is a puppy health management app with MERN and GraphQL.",
+    about:
+      "Pawly is a puppy health management application. Able to keep a redord of puppy's weight, what they eat, and how long they do exercise",
   },
   {
     title: "airbnb",
