@@ -3,7 +3,6 @@ import React from "react";
 const menus = [
   { link: "#about", text: "WHO I AM" },
   { link: "#works", text: "WORKS" },
-  // { link: "#blogs", text: "BLOGS" },
   { link: "#footer", text: "CONTACT" },
 ];
 
