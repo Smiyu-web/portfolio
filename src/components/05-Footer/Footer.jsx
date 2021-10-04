@@ -10,7 +10,7 @@ const Footer = () => {
           className="absolute inset-0 m-auto text-center top-1/2 text-bg"
           data-aos="fade-up"
         >
-          <a href="mailto:miyuuu0728@gmail.com">miyuuu0728@gmail.com</a>
+          <a href="mailto:miyusetoyama@gmail.com">miyusetoyama@gmail.com</a>
         </h6>
       </div>
       <p className="text-bg absolute right-8 bottom-8">
