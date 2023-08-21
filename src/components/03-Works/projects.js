@@ -2,9 +2,32 @@ import premiere from "../../images/premiere.jp2";
 import wecoop from "../../images/wecoop.jp2";
 import airbnb from "../../images/airbnb.jp2";
 import pawly from "../../images/pawly.jp2";
-import planimal from "../../images/planimal.jp2";
+import elements from "../../images/elements.jpg";
+import anotherWorks from "../../images/anotherWorks.jpg";
+import papamo from "../../images/papamo.jpg";
 
-export const projects = [
+export const workProjects = [
+  {
+    title: "PAPAMO株式会社",
+    id: "papamo",
+    image: papamo,
+    about: "詳細はスキルシートでご確認ください。",
+  },
+  {
+    title: "株式会社 Elements",
+    id: "elements",
+    image: elements,
+    about: "詳細はスキルシートでご確認ください。",
+  },
+  {
+    title: "株式会社 Another works",
+    id: "anotherWorks",
+    image: anotherWorks,
+    about: "詳細はスキルシートでご確認ください。",
+  },
+];
+
+export const myProjects = [
   {
     title: "pawly",
     id: "pawly",
@@ -47,17 +70,6 @@ export const projects = [
       "An airbnb clone app. We made this to study new language such as GraphQL, Appllo Client, and AWS database.",
   },
   {
-    title: "planimal",
-    id: "planimal",
-    image: planimal,
-    url: "https://planimal-app.vercel.app/",
-    git: "https://github.com/Smiyu-web/planimal-app",
-    type: "RETAIL/WHOLESALE E-COMMERCE",
-    langs: ["React", "React Redux", "Tailwind CSS", "MongoDB", "Express"],
-    about:
-      "Planimal is a retail/website plants store. This is MERN application.",
-  },
-  {
     title: "we co-op",
     id: "wecoop",
     image: wecoop,
@@ -82,5 +94,5 @@ export const projects = [
 ];
 
 export const findWork = (id) => {
-  return projects.find((work) => work.id === id);
+  return myProjects.find((work) => work.id === id);
 };

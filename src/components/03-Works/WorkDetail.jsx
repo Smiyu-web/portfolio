@@ -31,7 +31,7 @@ const WorkDetail = (props) => {
           href={work.git}
           className="detail_link"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLaptopCode} size="lg" />
           <h6 className="ml-1">github</h6>
@@ -40,7 +40,7 @@ const WorkDetail = (props) => {
           href={work.url}
           className="detail_link"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLaptop} size="lg" />
           <h6 className="ml-1">site</h6>
